@@ -26,7 +26,10 @@
 			&nbsp;&nbsp;&nbsp;
 			1.下载并把quickexcel1.0.jar包导入项目。<br/>
 			&nbsp;&nbsp;&nbsp;
-			2.创建数据映射实体类，并重写toString()方法(必须)。可以在字段上加上@Description(name="")来定义excel表的列名，如果使用了注解但name不赋值的话依然默认使用首字母大写字段名<br/>
+			2.创建数据映射实体类，并重写toString()方法(必须)。可以在字段上加上@Description(name="")注解来定义excel表的列名，如果使用了注解但name不赋值的话依然默认使用首字母大写字段名<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eg:@Description(name="id")
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			private Integer id;<br/>
 			&nbsp;&nbsp;&nbsp;
 			3.调用QuickExcel.exportExcel(arg1,arg2,arg3)方法即可导入excel表。<br/>
 			<ul>
